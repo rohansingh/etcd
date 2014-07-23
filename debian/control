@@ -1,0 +1,13 @@
+Source: etcd
+Section: net
+Priority: optional
+Maintainer: Rohan Singh <rohan@spotify.com>
+Build-Depends: debhelper (>= 8.0.0), golang
+Standards-Version: 3.9.4
+Homepage: https://github.com/coreos/etcd
+Vcs-Browser: https://github.com/coreos/etcd.git
+
+Package: etcd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: A highly-available key value store for shared configuration and service discovery
